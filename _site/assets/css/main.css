@@ -320,86 +320,6 @@ input[type="button"] {
     border-color: #888;
     outline: 0; }
 
-.name-lockup {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 10px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
-.fork-tag {
-  position: absolute;
-  top: 10px;
-  right: -10px;
-  background: #0074D9;
-  color: white;
-  padding: 2px 6px;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform-origin: top right;
-          transform-origin: top right; }
-  .fork-tag:hover {
-    color: white;
-    -webkit-animation: wiggle 0.4s linear 1;
-            animation: wiggle 0.4s linear 1; }
-
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
-  50% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg); }
-  80% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
-
-@keyframes wiggle {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
-  50% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg); }
-  80% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
-
-.flex-video {
-  height: 0;
-  margin-bottom: 0.88889rem;
-  overflow: hidden;
-  padding-bottom: 56%;
-  position: relative; }
-
-.flex-video iframe,
-.flex-video object,
-.flex-video embed,
-.flex-video video {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0; }
-
 body {
   margin: 10px;
   background-color: #ddd;
@@ -445,3 +365,6 @@ body {
     margin-bottom: 50px; }
     .page-home article:last-child {
       margin-bottom: 0px; }
+
+body {
+  background: blue; }

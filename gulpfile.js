@@ -42,13 +42,13 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.sass')
         .pipe(sass({
-            includePaths: ['assets/css/'],
+            includePaths: ['assets/css'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('assets/css/'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('_site/css'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -61,7 +61,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/2-basics/*.*', ['sass']);
     gulp.watch('assets/css/3-modules/*.*', ['sass']);
     gulp.watch('assets/css/4-pages/*.*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*' , 'assets/css/*', 'assets/img/*', 'assets/js/*'], ['jekyll-rebuild']);
 });
 
 /**
