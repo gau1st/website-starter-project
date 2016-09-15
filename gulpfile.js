@@ -60,8 +60,9 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/1-tools/*.*', ['sass']);
     gulp.watch('assets/css/2-basics/*.*', ['sass']);
     gulp.watch('assets/css/3-modules/*.*', ['sass']);
+    gulp.watch('assets/css/3-sections/*.*', ['sass']);
     gulp.watch('assets/css/4-pages/*.*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*' , 'assets/css/*', 'assets/img/*', 'assets/js/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*' , '_includes/*' , 'assets/css/*', 'assets/img/*', 'assets/js/*', 'assets/fonts/*'], ['jekyll-rebuild']);
 });
 
 /**
